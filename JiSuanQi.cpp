@@ -21,8 +21,13 @@ int main()
 			cout << a << "/" << b << "=" << a / b << endl;
 		else
 			cout << "错误,除数不能为零" << endl;
+		break;
 	case'%':
-		cout << a << "%" << b << "=" << (int)a % (int)b << endl;
+		if (b != 0)
+			cout << a << "%" << b << "=" << (int)a % (int)b << endl;
+		else 
+			cout << "错误,除数不能为零" << endl;
+
 	}
 	return 0;
 }
